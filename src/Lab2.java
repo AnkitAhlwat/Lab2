@@ -1,3 +1,6 @@
+// Student Name: Ankit Ahlwat
+// Student ID: A01317232
+// Set: 3M
 import java.util.ArrayList;
 
 public class Lab2 {
@@ -5,6 +8,9 @@ public class Lab2 {
 
     ArrayList<Character> characterList = addCharacters(numberOfCharacters);
 
+    /**
+     * Generates all palindrome sequences of length n.
+     */
     public ArrayList<String> generatePalindromeSequences (int number){
         ArrayList<String> palindromes = new ArrayList<>();
         if (number == 0){
@@ -31,11 +37,26 @@ public class Lab2 {
             }
         return palindromes;
     }
+
+    /**
+     * A nice method to add characters based of Unix ASCII values.
+     * @param number The number of characters to add starting from 'A'
+     * @return An ArrayList of characters.
+     */
     public ArrayList<Character> addCharacters(int number){
         ArrayList<Character> listOfChars = new ArrayList<>();
         for (int i = 0; i <number ; i++) {
             listOfChars.add((char)('A'+i));
         }
         return listOfChars;
+    }
+
+    /**
+     * Donut
+     */
+    public ArrayList<String> anotherMethod(int n, int numColours){
+        numberOfCharacters = numColours;
+        characterList = addCharacters(numberOfCharacters);
+        return generatePalindromeSequences(n);
     }
 }
