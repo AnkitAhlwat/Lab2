@@ -4,6 +4,7 @@
 import java.util.ArrayList;
 
 public class Lab2 {
+//    These constants are used for scalability instead of hardcoding string 'ABC'.
     int numberOfCharacters = 3;
 
     ArrayList<Character> characterList = addCharacters(numberOfCharacters);
