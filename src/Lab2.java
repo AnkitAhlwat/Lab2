@@ -2,7 +2,6 @@
 // Student ID: A01317232
 // Set: 3M
 import java.util.ArrayList;
-
 public class Lab2 {
 //    These constants are used for scalability instead of hardcoding string 'ABC'.
     int numberOfCharacters = 3;
